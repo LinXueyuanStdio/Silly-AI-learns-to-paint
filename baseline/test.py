@@ -10,7 +10,7 @@ from DRL.actor import *
 from Renderer.stroke_gen import *
 from Renderer.model import *
 
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+device = torch.device("cuda:6" if torch.cuda.is_available() else "cpu")
 width = 128
 
 parser = argparse.ArgumentParser(description='Learning to Paint')
